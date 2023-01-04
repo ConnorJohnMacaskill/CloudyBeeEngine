@@ -1,5 +1,5 @@
 # Introduction
-An [ECS](https://en.wikipedia.org/wiki/Entity_component_system) engine written using the C# Monogame framework, lovingly named CloudyBee.
+An [ECS](https://en.wikipedia.org/wiki/Entity_component_system) engine written using the C# Monogame framework, lovingly named CloudyBee. I never really used it for anything but enjoyed developing it and learnt a lot about the concept.
 
 # Structure
 
