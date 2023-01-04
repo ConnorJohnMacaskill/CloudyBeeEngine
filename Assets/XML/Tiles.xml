@@ -1,0 +1,50 @@
+<TileConfig>
+  <Tiles>
+    <Tile Name="Empty">
+      <Walkable>false</Walkable>
+      <Buildable>false</Buildable>
+      <AutoTiled>false</AutoTiled>
+      <Textures>
+        <Path>Tiles/Empty</Path>
+      </Textures>
+    </Tile>
+    <Tile Name="Grass">
+      <Walkable>true</Walkable>
+      <Buildable>true</Buildable>
+      <AutoTiled>false</AutoTiled>
+      <Textures>
+        <Path>Tiles/Grass1</Path>
+        <Path>Tiles/Grass2</Path>
+        <Path>Tiles/Grass3</Path>
+      </Textures>
+    </Tile>
+    <Tile Name="Sand">
+      <Walkable>true</Walkable>
+      <Buildable>false</Buildable>
+      <AutoTiled>false</AutoTiled>
+      <Textures>
+        <Path>Tiles/Sand1</Path>
+        <Path>Tiles/Sand2</Path>
+        <Path>Tiles/Sand3</Path>
+      </Textures>
+    </Tile>
+    <Tile Name="Water">
+      <Walkable>false</Walkable>
+      <Buildable>false</Buildable>
+      <AutoTiled>false</AutoTiled>
+      <Textures>
+        <Path>Tiles/Water1</Path>
+        <Path>Tiles/Water2</Path>
+        <Path>Tiles/Water3</Path>
+      </Textures>
+    </Tile>
+    <Tile Name="Rock">
+      <Walkable>false</Walkable>
+      <Buildable>false</Buildable>
+      <AutoTiled>true</AutoTiled>
+      <Textures>
+        <Path>Tiles/RockDefault</Path>
+      </Textures>
+    </Tile>
+  </Tiles>
+</TileConfig>

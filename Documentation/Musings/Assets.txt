@@ -1,0 +1,39 @@
+So addons exist in the Addons folder
+
+Each Addon should have a info file with it, with stuff like addon name and the like.
+Each Addon has the typical file structure, XML, textures, LUA etc.
+Have an addons.txt file in the addons folder, which dictates load order.
+Engine checks each addon folder exists, checks for the info.txt and creates
+an addon object which holds addon info and load order
+In order, load all the file/folder contents. Any new content will overwrite old content, hence
+the load order.
+On game start, get a list of Addon objects for each folder in the Addons folder.
+Addon object should have addon name, date, author, etc and also contain the folder path.
+For each addon, load in the textures and scripts into the texture and script cache.
+(consider entity cache also, for now load when called).
+Name for texture/script is sanitised as folder/folder/file starting from textures/scripts folder.
+No reference to what addon loaded it in.
+
+OR make it so the path has to include the addon also. So referencing a texture in the base addon would be
+Base/Textures/Turrets/Turret01
+as opposed to Turrets/Turret01 and replacing old one.
+Would be hard to change base content this way. So I am going with replacement.
+Oooo, but then loading/unloading addons during runtime would be annoying.
+Just dont let that happen? Addons are useful because you can easily disable changes, as opposed to changing
+the game files manually. This way they can just copy files and change to their hearts content.
+Right, right. Addons can only be loaded/unloaded outside runtime.
+
+
+So both Textures and Scripts need to be loaded in at runtime.
+They should be stored in seperate caches.
+
+
+So how to handle scripts/textures? I could ignore the whole new thing and just have it replace stuff.
+Soooo lets say some entity definition in BASE references scripts/soldierScript and so does an entity
+reference in ADDON1 references scripts/soldierScript and both have that definition. Or make them more self contained?
+Noo, thats stupid, later addons might want to reuse base textures and perhaps simple scripts.
+So I would say new references replace old references
+
+---------------
+So logically I should not have it overwrite and load the addons in reverse order.
+That way wont load in assets that are just going to be overwritten later.

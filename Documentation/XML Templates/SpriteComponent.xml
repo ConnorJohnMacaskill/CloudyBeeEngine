@@ -1,0 +1,21 @@
+<SpriteComponent>
+    <Name>Sprite!</Name>
+    <Texture>Units/Soldier</Texture>
+    <Position>30,30</Position>
+    <Rotation>46</Rotation>
+    <Origin>0,0</Origin>    
+    <Scale>1.0</Scale>
+    <Color>124,143,255,255</Color>
+</SpriteComponent>
+
+
+SpriteComponent - Identifies this as a sprite component.
+Name - Name of the component.
+Texture - Path to the texture the sprite componet will draw, starting from the Textures folder.
+Position - Position of the component as an offset from its parent.
+Rotation - Rotation of the component, defaults to 0.
+Origin - Centre of rotation, terms such as "CENTRE", "TOPLEFT", "TOPRIGHT", etc can be used in place of a vector. Defaults to 0,0.
+Scale - Scale of the texture to be drawn, defaults to 1.0.
+Color - Color mask to be applied, defaults to White aka no mask.
+
+

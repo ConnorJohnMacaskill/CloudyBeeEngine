@@ -1,0 +1,9 @@
+<LogicComponent>
+    <Name>Sciprt!</Name>
+    <Script>Units/SoldierScript</Script>
+</LogicComponent>
+
+
+LogicComponent - Identifies this as a logic component.
+Name - Name of the component.
+Script - Path to the LUA script that the logic component will execute, starting from the scripts folder.

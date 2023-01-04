@@ -1,0 +1,30 @@
+<Entity>
+    <Name>SentryTurret</Name>
+    <Rotation>0</Rotation>
+    <Components>
+        <SpriteComponent>
+            <Name>Base</Name>
+            <Texture>SentryTurret/SentryBase</Texture>
+            <OffSet>0,0</OffSet>
+            <Rotation>0</Rotation>
+            <Origin>16,16</Origin>
+            <Scale>2.0</Scale>
+            <Color>White</Color>
+            <LockRotation>True</LockRotation>
+        </SpriteComponent>
+        <SpriteComponent>
+            <Name>Turret</Name>
+            <Texture>SentryTurret/SentryTurret</Texture>
+            <OffSet>0,0</OffSet>
+            <Rotation>0</Rotation>
+            <Origin>32,32</Origin>
+            <Scale>1.0</Scale>
+            <Color>White</Color>
+            <LockRotation>False</LockRotation>
+        </SpriteComponent>
+        <LogicComponent>
+            <Name>SentryScript</Name>
+            <Script>SentryScript</Script>
+        </LogicComponent>
+    </Components>
+</Entity>

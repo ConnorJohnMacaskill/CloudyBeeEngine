@@ -1,0 +1,14 @@
+<Tiles>
+    <Tile>
+        <ID>0</ID>
+        <Name>Empty</Name>
+        <Texture></Texture>
+        <Passable>False</Passable>
+    </Tile>
+    <Tile>
+        <ID>1</ID>
+        <Name>Steel Floor</Name>
+        <Texture>Tiles/SteelFloor</Texture>
+        <Passable>False</Passable>
+    </Tile>
+</Tiles>
